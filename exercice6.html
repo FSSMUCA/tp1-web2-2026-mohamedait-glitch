@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP JavaScript</title>
+</head>
+<body>
+
+    <h1>Exercice 6 </h1>
+
+    <script>
+        // --- Code corrigé en respectant le camelCase ---
+
+        let premierPrix = 100;      // Correction : Ne peut pas commencer par un chiffre
+        let deuxiemePrix = 80;     // Correction : Pas d'espace (camelCase)
+        let prixMinimum = 50;      // Correction : Pas de tiret (interprété comme une soustraction)
+        let prixSpecial = 200;     // Correction : 'var' est un mot réservé, on le renomme
+        let prixMaximum = 300;     // Correction : camelCase (minuscule au début)
+
+        // Calcul du prix moyen avec les nouveaux noms
+        let prixMoyen = (premierPrix + deuxiemePrix + prixMinimum + prixSpecial + prixMaximum) / 5;
+
+        // Affichage dans la console
+        console.log("Prix moyen : " + prixMoyen);
+        console.log("Le prix minimum est : " + prixMinimum);
+        console.log("Le prix maximum est : " + prixMaximum);
+    </script>
+
+</body>
+</html>

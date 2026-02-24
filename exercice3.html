@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP JavaScript</title>
+</head>
+<body>
+
+    <h1>Exercice 3</h1>
+
+    <script>
+        // 1. Déclaration de la constante (ne changera jamais)
+        const TAUX_TVA = 0.20;
+
+        // 2. Déclaration du prix Hors Taxes
+        let prixHT = 150;
+
+        // 3. Calcul du montant de la TVA et du prix TTC
+        let montantTva = prixHT * TAUX_TVA;
+        let prixTTC = prixHT + montantTva;
+
+        // 4. Affichage avec Template Literals (backticks ` `)
+        console.log(`Prix HT : ${prixHT} € | TVA (${TAUX_TVA * 100}%) : ${montantTva} € | Prix TTC : ${prixTTC} €`); 
+    </script>
+
+</body>
+</html>
